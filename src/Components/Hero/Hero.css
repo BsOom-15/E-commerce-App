@@ -1,0 +1,100 @@
+.hero
+{
+    height: 100vh;
+    background: linear-gradient(180deg, #0a2472, #05183e 60%);
+    display: flex;
+}
+
+.hero-left
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero-left h2
+{
+    display: flex;
+    font-size: 26px;
+    color: #080808;
+    font-weight: 600;
+}
+
+.hero-left p 
+{
+    color: #a6e1fa;
+    font-size: 100px;
+    font-weight: 700;
+    display: flex;
+}
+
+.hero-hand-icons
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icons img
+{
+    width: 105px;
+}
+
+.hero-lastes-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #a52422;
+    color: #a6e1fa;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hero-right
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-background {
+    background: linear-gradient(180deg, #007fff, #00478f 50%);
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: transform 0.5s ease-in-out;
+    animation: move 10s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(15px, 15px);
+    }
+    50% {
+        transform: translate(-15px, 15px);
+    }
+    75% {
+        transform: translate(-15px, -15px);
+    }
+    100% {
+        transform: translate(15px, -15px);
+    }
+}
